@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>ゆうちゃん管理システム</title>
+	<meta charset="utf-8">
+	<meta name=”viewport” content=”width=device-width,initial-scale=1″>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+</head>
+<body class="background">
+
+	<!--トップテキスト-->
+<div class="top_text" >
+	<h2>ゆうちゃん管理システム</h2>
+	<p class="flow-text">ver 1.0</p>
+</div>
+
+<div class="container">
+	<table>
+  <tr>
+    <th class="flow-text">エサを与えた？</th>
+    <td class="flow-text"><script language="JavaScript">
+ 
+    today = new Date();
+    h = today.getHours();
+
+    if((h >= 17) && (h < 24))
+        document.write("エサを与えました");
+    else
+        document.write("まだエサを与えていません");
+    </script>
+    <td>
+
+  </tr>
+  <tr>
+    <th class="flow-text">完了時刻（エサ入れ）</th>
+    <td class="flow-text"><script language="JavaScript">
+ 
+    today = new Date();
+    h = today.getHours();
+
+    if((h >= 17) && (h < 18))
+        document.write("最終更新:17:30");
+
+     else if((h >= 18) && (h < 19))
+        document.write("最終更新:18:00");
+
+     else if((h >= 19) && (h < 24))
+        document.write("最終更新:18:30");
+
+    else
+        document.write("まだエサを与えていません");
+    </script>
+</td>
+  </tr>
+  <tr>
+    <th class="flow-text">水を変えた？</th>
+    <td class="flow-text"><script language="JavaScript">
+ 
+    today = new Date();
+    h = today.getHours();
+
+    if((h >= 17) && (h < 24))
+        document.write("水を変えました");
+    else
+        document.write("まだ水を変えていません");
+    </script></td>
+  </tr>
+  <tr>
+    <th class="flow-text">完了時刻（水変え）</th>
+    <td class="flow-text"><script language="JavaScript">
+ 
+    today = new Date();
+    h = today.getHours();
+
+    if((h >= 17) && (h < 18))
+        document.write("最終更新:17:30");
+
+     else if((h >= 18) && (h < 19))
+        document.write("最終更新:18:00");
+
+     else if((h >= 19) && (h < 24))
+        document.write("最終更新:18:30");
+
+    else
+        document.write("まだ水を変えていません");
+    </script></td>
+  </tr>
+  </tr>
+  <tr>
+    <th class="flow-text">異常</th>
+    <td class="flow-text">--</td>
+  </tr>
+  	</table>
+</div>
+
+<div class="tan">
+  <script type="text/javascript" language="javascript">// <![CDATA[
+// 今日の日付を取得
+var today = new Date();
+ 
+// 開催日を設定
+// ※ 月は0～11までで指定
+var targetDay = new Date(2021,9,6);
+ 
+// 1日のマイクロ秒で除算をすると
+// 開催日までの日数が算出できる
+remainDay = Math.floor((targetDay - today) / (24*60*60*1000));
+ 
+// 開催前日の場合は残り0日になってしまうのを防止
+remainDay++;
+ 
+if (remainDay > 0) {
+  document.write("誕生日まであと"+remainDay+"日");
+}
+else {
+  document.write("今日は誕生日です！！");
+}
+// ]]></script>
+
+</div>
+<!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
