@@ -15,8 +15,23 @@
 
 	<!--トップテキスト-->
 <div class="top_text" >
-	<h2>ゆうちゃん管理システム</h2>
-	<p class="flow-text">ver 1.0</p>
+	<h1>ゆうちゃん管理システム</h1>
+
+  <div class="time">
+     <script language="JavaScript">
+    // 今日の日付情報を取得し変数dTodayに格納する
+var dToday = new Date(); 
+ 
+// 時・分・秒を取得する
+var hour = dToday.getHours();
+var minute = dToday.getMinutes();
+ 
+// 現在時刻を表示する
+document.write("現在時刻は" + hour + "時", + minute + "分" + "です");
+  </script>
+  </div>
+
+	<p class="v">ver 1.1</p>
 </div>
 
 <div class="container">
@@ -33,8 +48,8 @@
     else
         document.write("まだエサを与えていません");
     </script>
-    <td>
 
+    <td>
   </tr>
   <tr>
     <th class="flow-text">完了時刻（エサ入れ）</th>
@@ -125,5 +140,7 @@ else {
 </div>
 <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<p class="example1">ver1.1を公開しました。 2/18 【変更点：時間の追加、微調整】</p>
 </body>
 </html>

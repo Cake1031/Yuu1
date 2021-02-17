@@ -63,9 +63,10 @@ table {
   padding-top: 70px;
 }
 
-p {
+.v {
   color: #708090;
   background-color: white; width: 100px; text-align: center;
+  font-size: 30px;
 }
 
 a {
@@ -74,7 +75,7 @@ a {
 }
 
 .tan {
-  font-size:80px; padding-top: 80px ; padding-bottom: 80px ; ; text-align: center;
+  font-size:55px; padding-top: 80px ; padding-bottom: 80px ; ; text-align: center;
     margin: 2em 0;
     font-weight: bold;
     color: #6091d3;/*文字色*/
@@ -82,3 +83,42 @@ a {
     border: solid 3px #6091d3;/*線*/
     border-radius: 10px;/*角の丸み*/
 }
+
+.time {
+  font-size: 50px; color: #808080;
+}
+
+h1 {
+  font-size : 75px ;
+}
+
+.example1 {
+  position: relative;/*相対位置*/
+  padding-left: 95px;/*アイコン分のスペース*/
+  line-height: 1.4;/*行高*/
+  color: gray;/*文字色*/
+  font-size: 30px;
+}
+
+.example1:before {
+  font-family: "Font Awesome 5 Free";/*忘れずに*/
+  content: "\f111";/*アイコンのユニコード*/
+  font-weight: 900;
+  position: absolute;/*絶対位置*/
+  font-size: 30px;/*サイズ*/
+  left: 60px;/*アイコンの位置*/
+  top: -0.0em;/*アイコンの位置*/
+}
+.example1:before {
+  color: #ffa7a1;
+}
+.example2:before {
+  color: #ffdfa1;
+}
+.example3:before {
+  color: #a1ceff;
+}
+.example4:before {
+  color: #b1eab8;
+}
+
