@@ -55,8 +55,9 @@ table {
 }
 
 .top_text {
-  padding-left: 70px;  text-align: center;
+  text-align: center;
   color: #5F9EA0;
+  border: 10px groove #AFEEEE;
 }
 
 .container {
@@ -65,8 +66,12 @@ table {
 
 .v {
   color: #708090;
-  background-color: white; width: 100px; text-align: center;
   font-size: 27px;
+  float : left ;
+  border: 8px dotted pink;
+  background: #EEE8AA;
+
+
 }
 
 a {
@@ -86,6 +91,8 @@ a {
 
 .time {
   font-size: 50px; color: #808080;
+  text-align: center;
+  border: 3px outset white;
 }
 
 h1 {
