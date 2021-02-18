@@ -18,20 +18,20 @@
 	<h1>ゆうちゃん管理システム</h1>
 
   <div class="time">
-     <script language="JavaScript">
-    // 今日の日付情報を取得し変数dTodayに格納する
-var dToday = new Date(); 
- 
-// 時・分・秒を取得する
-var hour = dToday.getHours();
-var minute = dToday.getMinutes();
- 
-// 現在時刻を表示する
-document.write("現在時刻は" + hour + "時", + minute + "分" + "です");
+
+<script type="text/javascript">
+      var d=new Date();
+    var year=d.getFullYear();
+    var month=d.getMonth()+1;    /* 1月(0)のため1をプラス */
+    var day=d.getDate();
+    var hours=d.getHours();
+    var minutes=d.getMinutes();
+    document.write("現在日時： <em>"+year+"年"+month+"月"+day+"日 "+hours+"時"+minutes+"分");
   </script>
+
   </div>
 
-	<p class="v">ver 1.1</p>
+	<p class="v">ver 1.1.2</p>
 </div>
 
 <div class="container">
@@ -141,6 +141,14 @@ else {
 <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-<p class="example1">ver1.1を公開しました。 2/18 【変更点：時間の追加、微調整】</p>
+<!--ver情報-->
+<div>
+  <p class="example1">ver1.1を公開しました。 2/18 【変更点：時間の追加、微調整】</p>
+  <p class="example1">ver1.1.2を公開しました 2/18 【変更点 : 日付の表示】</p>
+</div>
+
+
+
+
 </body>
 </html>
