@@ -2,9 +2,9 @@
 <html>
 <head>
 
-	<title>ゆうちゃん管理システム</title>
-	<meta charset="utf-8">
-	<meta name=”viewport” content=”width=device-width,initial-scale=1″>
+  <title>ゆうちゃん管理システム</title>
+  <meta charset="utf-8">
+  <meta name=”viewport” content=”width=device-width,initial-scale=1″>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
@@ -13,9 +13,9 @@
 </head>
 <body class="background">
 
-	<!--トップテキスト-->
+  <!--トップテキスト-->
 <div class="top_text" >
-	<h1>ゆうちゃん管理システム</h1>
+  <h1>ゆうちゃん管理システム</h1>
 
   <div class="time">
 
@@ -33,11 +33,11 @@
 <div class="container">
   <p class="v">ver 1.1.5</p>
 </div>
-	
+  
 </div>
 
 <div class="container">
-	<table>
+  <table>
   <tr>
     <th class="nai">エサを与えた？</th>
     <td class="nai"><script language="JavaScript">
@@ -45,8 +45,10 @@
     today = new Date();
     h = today.getHours();
 
-    if((h >= 0) && (h < 24))
-        document.write("今日は休日です。");
+    if((h >= 17) && (h < 24))
+        document.write("エサを与えました");
+    else
+        document.write("まだエサを与えていません");
     </script>
 
     <td>
@@ -58,6 +60,16 @@
     today = new Date();
     h = today.getHours();
 
+    if((h >= 17) && (h < 18))
+        document.write("最終更新:17:00");
+
+     else if((h >= 18) && (h < 19))
+        document.write("最終更新:18:00");
+
+     else if((h >= 19) && (h < 24))
+        document.write("最終更新:18:30");
+
+    else
         document.write("まだエサを与えていません");
     </script>
 </td>
@@ -69,7 +81,10 @@
     today = new Date();
     h = today.getHours();
 
-        document.write("今日は休日です。");
+    if((h >= 17) && (h < 24))
+        document.write("水を変えました");
+    else
+        document.write("まだ水を変えていません");
     </script></td>
   </tr>
   <tr>
@@ -79,6 +94,16 @@
     today = new Date();
     h = today.getHours();
 
+    if((h >= 17) && (h < 18))
+        document.write("最終更新:17:00");
+
+     else if((h >= 18) && (h < 19))
+        document.write("最終更新:18:00");
+
+     else if((h >= 19) && (h < 24))
+        document.write("最終更新:18:30");
+
+    else
         document.write("まだ水を変えていません");
     </script></td>
   </tr>
@@ -87,7 +112,18 @@
     <th class="nai">異常</th>
     <td class="nai">--</td>
   </tr>
-  	</table>
+    </table>
+</div>
+
+<div class="container">
+  
+</div>
+
+<div class="ima">
+  <strong>ゆうちゃんと
+<script language="JavaScript" src="https://www.nannichime.net/s.php?d=2015/10/6">
+</script>
+を乗り越えました。</strong></font>
 </div>
 
 <div class="tan">
@@ -122,7 +158,8 @@ else {
 <div>
   <p class="example1">ver1.1を公開しました。 2/18 【変更点：時間の追加、微調整】</p>
   <p class="example1">ver1.1.2を公開しました 2/18 【変更点 : 日付の表示】</p>
-  <p class="example1">ver1.1.5を追加しました 2/19 【変更点 : ページデザイン】</p>
+  <p class="example1">ver1.1.5を公開しました 2/19 【変更点 : ページデザイン】</p>
+  <p class="example1">ver1.1.6を公開しました 2/20 【変更点 : ゆうちゃんと乗り越えた日々を追加、表の文字を縮小】</p>
 </div>
 
 </body>
