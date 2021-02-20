@@ -45,10 +45,8 @@
     today = new Date();
     h = today.getHours();
 
-    if((h >= 17) && (h < 24))
-        document.write("エサを与えました");
-    else
-        document.write("まだエサを与えていません");
+    if((h >= 0) && (h < 24))
+        document.write("今日は休日です。");
     </script>
 
     <td>
@@ -60,16 +58,6 @@
     today = new Date();
     h = today.getHours();
 
-    if((h >= 17) && (h < 18))
-        document.write("最終更新:17:00");
-
-     else if((h >= 18) && (h < 19))
-        document.write("最終更新:18:00");
-
-     else if((h >= 19) && (h < 24))
-        document.write("最終更新:18:30");
-
-    else
         document.write("まだエサを与えていません");
     </script>
 </td>
@@ -81,10 +69,7 @@
     today = new Date();
     h = today.getHours();
 
-    if((h >= 17) && (h < 24))
-        document.write("水を変えました");
-    else
-        document.write("まだ水を変えていません");
+        document.write("今日は休日です。");
     </script></td>
   </tr>
   <tr>
@@ -94,16 +79,6 @@
     today = new Date();
     h = today.getHours();
 
-    if((h >= 17) && (h < 18))
-        document.write("最終更新:17:00");
-
-     else if((h >= 18) && (h < 19))
-        document.write("最終更新:18:00");
-
-     else if((h >= 19) && (h < 24))
-        document.write("最終更新:18:30");
-
-    else
         document.write("まだ水を変えていません");
     </script></td>
   </tr>
