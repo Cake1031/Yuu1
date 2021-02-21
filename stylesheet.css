@@ -66,10 +66,8 @@ table {
   color: #708090;
   font-size: 27px;
   float : left ;
-  border: 8px dotted pink;
-  background: #EEE8AA;
-
-
+  border: 3px solid pink;
+  background: #FFFFE0;
 }
 
 a {
