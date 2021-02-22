@@ -113,6 +113,41 @@
     </script></td>
   </tr>
   </tr>
+
+<tr>
+    <th class="nai">おくすりを飲ませた？</th>
+    <td class="nai"><script language="JavaScript">
+ 
+    today = new Date();
+    h = today.getHours();
+
+    if((h >= 17) && (h < 24))
+        document.write("飲ませました");
+    else
+        document.write("まだ飲ませていません");
+    </script>
+
+    <td>
+  </tr>
+  <tr>
+    <th class="nai">完了時刻（おくすり）</th>
+    <td class="nai"><script language="JavaScript">
+ 
+    today = new Date();
+    h = today.getHours();
+
+    if((h >= 17) && (h < 18))
+        document.write("最終更新:17:00");
+
+     else if((h >= 18) && (h < 19))
+        document.write("最終更新:17:50");
+
+    else
+        document.write("まだ飲ませていません");
+    </script>
+</td>
+  </tr>
+
   <tr>
     <th class="nai">異常</th>
     <td class="nai">--</td>
@@ -165,6 +200,7 @@ else {
   <p class="example1">ver1.1.2を公開しました 2/18 【変更点 : 日付の表示】</p>
   <p class="example1">ver1.1.5を公開しました 2/19 【変更点 : ページデザイン】</p>
   <p class="example1">ver1.1.6を公開しました 2/20 【変更点 : 新機能を追加、表の文字を縮小】</p>
+  <p class="example1"> おくすり枠を作成しました。 これは期間中だけなのでverアップはされません。 2/22</p>
 </div>
 
 </body>
