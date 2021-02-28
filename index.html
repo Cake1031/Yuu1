@@ -2,9 +2,9 @@
 <html>
 <head>
 
-  <title>ゆうちゃん管理システム</title>
-  <meta charset="utf-8">
-  <meta name=”viewport” content=”width=device-width,initial-scale=1″>
+	<title>ゆうちゃん管理システム</title>
+	<meta charset="utf-8">
+	<meta name=”viewport” content=”width=device-width,initial-scale=1″>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
@@ -13,13 +13,14 @@
 </head>
 <body class="background">
 
-  <script language="javascript">
+   <script language="javascript">
     alert("ゆうちゃん管理システムへようこそ")
+    
+  </script>
 
-</script>
-  <!--トップテキスト-->
+	<!--トップテキスト-->
 <div class="top_text" >
-  <h1>ゆうちゃん管理システム</h1>
+	<h1>ゆうちゃん管理システム</h1>
 
   <div class="time">
 
@@ -37,11 +38,11 @@
 <div class="container">
   <p class="v">ver 1.1.8</p>
 </div>
-  
+	
 </div>
 
 <div class="container">
-  <table>
+	<table>
   <tr>
     <th class="nai">エサを与えた？</th>
     <td class="nai"><script language="JavaScript">
@@ -49,8 +50,10 @@
     today = new Date();
     h = today.getHours();
 
-    if((h >= 0) && (h < 24))
-      document.write("今日は休日です。");
+    if((h >= 17) && (h < 24))
+        document.write("エサを与えました");
+    else
+        document.write("まだエサを与えていません");
     </script>
 
     <td>
@@ -62,8 +65,17 @@
     today = new Date();
     h = today.getHours();
 
-    if((h >= 0) && (h < 24))
-        document.write("今日は休日です。");
+    if((h >= 17) && (h < 18))
+        document.write("最終更新:17:00");
+
+     else if((h >= 18) && (h < 19))
+        document.write("最終更新:18:00");
+
+     else if((h >= 19) && (h < 24))
+        document.write("最終更新:18:30");
+
+    else
+        document.write("まだエサを与えていません");
     </script>
 </td>
   </tr>
@@ -74,8 +86,10 @@
     today = new Date();
     h = today.getHours();
 
-    if((h >= 0) && (h < 24))
-        document.write("今日は休日です。");
+    if((h >= 17) && (h < 24))
+        document.write("水を変えました");
+    else
+        document.write("まだ水を変えていません");
     </script></td>
   </tr>
   <tr>
@@ -85,23 +99,32 @@
     today = new Date();
     h = today.getHours();
 
-    if((h >= 0) && (h < 24))
-        document.write("今日は休日です。");
+    if((h >= 17) && (h < 18))
+        document.write("最終更新:17:00");
+
+     else if((h >= 18) && (h < 19))
+        document.write("最終更新:18:00");
+
+     else if((h >= 19) && (h < 24))
+        document.write("最終更新:18:30");
+
+    else
+        document.write("まだ水を変えていません");
     </script></td>
   </tr>
   </tr>
 
 <tr>
-    <th class="nai">今日は休日です。</th>
+    <th class="nai">おくすりを飲ませた？</th>
     <td class="nai"><script language="JavaScript">
  
     today = new Date();
     h = today.getHours();
 
-    if((h >= 0) && (h < 24))
-        document.write("今日は休日です。");
+    if((h >= 17) && (h < 24))
+        document.write("飲ませました");
     else
-        document.write("今日は休日です。");
+        document.write("まだ飲ませていません");
     </script>
 
     <td>
@@ -113,13 +136,19 @@
     today = new Date();
     h = today.getHours();
 
-    if((h >= 0) && (h < 24))
-        document.write("今日は休日です。");
+    if((h >= 17) && (h < 18))
+        document.write("最終更新:17:00");
+
+     else if((h >= 18) && (h < 24))
+        document.write("最終更新:17:50");
+
+    else
+        document.write("まだ飲ませていません");
     </script>
 </td>
   </tr>
 
-  <tr>
+<tr>
     <th class="nai">💩（うんち）</th>
     <td class="nai">--</td>
   </tr>
@@ -128,7 +157,8 @@
     <th class="nai">異常</th>
     <td class="nai">--</td>
   </tr>
-    </table>
+
+  	</table>
 </div>
 
 <div class="container">
