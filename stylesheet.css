@@ -112,11 +112,6 @@ h1 {
   color: white;
 }
 
-h3 {
-  color: white;
-  padding-top: 300px;
-}
-
 .example1 {
   position: relative;/*相対位置*/
   padding-left: 95px;/*アイコン分のスペース*/
@@ -151,11 +146,6 @@ h3 {
   font-size: 31px;
 }
 
-.naiy {
-  font-size: 31px;
-  color : #D2691E;
-}
-
 .naiyo {
   background: #FFF8DC;
 
@@ -171,3 +161,5 @@ h3 {
     border-radius: 10px;/*角の丸み*/
      font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
   }
+
+  
