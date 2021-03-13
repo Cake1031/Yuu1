@@ -76,6 +76,7 @@ table {
 }
 
 .verz {
+  display: block;
   background: #DCDCDC;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -162,4 +163,10 @@ h1 {
      font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
   }
 
-  
+img {
+  display: block;
+  width: 250px;
+  height: 300px;
+  padding-bottom: 30px;
+  float: right;
+}
