@@ -162,11 +162,3 @@ h1 {
     border-radius: 10px;/*角の丸み*/
      font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
   }
-
-img {
-  display: block;
-  width: 250px;
-  height: 300px;
-  padding-bottom: 30px;
-  float: right;
-}
