@@ -76,10 +76,10 @@ table {
 }
 
 .verz {
+  display: block;
   background: #DCDCDC;
   padding-top: 10px;
   padding-bottom: 10px;
-  
 }
 
 .verf {
@@ -111,11 +111,6 @@ a {
 h1 {
   font-size : 70px ;
   color: white;
-}
-
-h3 {
-  color: white;
-  padding-top: 300px;
 }
 
 .example1 {
@@ -152,11 +147,6 @@ h3 {
   font-size: 31px;
 }
 
-.naiy {
-  font-size: 31px;
-  color : #D2691E;
-}
-
 .naiyo {
   background: #FFF8DC;
 
@@ -172,4 +162,3 @@ h3 {
     border-radius: 10px;/*角の丸み*/
      font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
   }
-
