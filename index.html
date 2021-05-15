@@ -2,9 +2,9 @@
 <html>
 <head>
 
-	<title>ゆうちゃん管理システム</title>
-	<meta charset="utf-8">
-	<meta name=”viewport” content=”width=device-width,initial-scale=1″>
+  <title>ゆうちゃん管理システム</title>
+  <meta charset="utf-8">
+  <meta name=”viewport” content=”width=device-width,initial-scale=1″>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
@@ -13,9 +13,9 @@
 </head>
 <body class="background">
 
-	<!--トップテキスト-->
+  <!--トップテキスト-->
 <div class="top_text" >
-	<h1>ゆうちゃん管理システム</h1>
+  <h1>ゆうちゃん管理システム</h1>
 
   <div class="time">
 
@@ -34,12 +34,11 @@
 </div>
   </div>
 
-	
+  
 </div>
 
 <div class="container">
   <div class="naiyo">
-
     <table>
   <tr>
     <th class="nai">エサを与えた？</th>
@@ -48,10 +47,8 @@
     today = new Date();
     h = today.getHours();
 
-    if((h >= 17) && (h < 24))
-        document.write("エサを与えました");
-    else
-        document.write("まだエサを与えていません");
+    if((h >= 0) && (h < 24))
+      document.write("今日は休日です。");
     </script>
 
     <td>
@@ -63,17 +60,8 @@
     today = new Date();
     h = today.getHours();
 
-    if((h >= 17) && (h < 18))
-        document.write("17:00");
-
-     else if((h >= 18) && (h < 19))
-        document.write("18:00");
-
-     else if((h >= 19) && (h < 24))
-        document.write("18:30");
-
-    else
-        document.write("まだエサを与えていません");
+    if((h >= 0) && (h < 24))
+        document.write("今日は休日です。");
     </script>
 </td>
   </tr>
@@ -84,10 +72,8 @@
     today = new Date();
     h = today.getHours();
 
-    if((h >= 17) && (h < 24))
-        document.write("水を変えました");
-    else
-        document.write("まだ水を変えていません");
+    if((h >= 0) && (h < 24))
+        document.write("今日は休日です。");
     </script></td>
   </tr>
   <tr>
@@ -97,29 +83,36 @@
     today = new Date();
     h = today.getHours();
 
-    if((h >= 17) && (h < 18))
-        document.write("17:00");
-
-     else if((h >= 18) && (h < 19))
-        document.write("18:00");
-
-     else if((h >= 19) && (h < 24))
-        document.write("18:30");
-
-    else
-        document.write("まだ水を変えていません");
+    if((h >= 0) && (h < 24))
+        document.write("今日は休日です。");
     </script></td>
   </tr>
   </tr>
 
 <tr>
-    <th class="nai">💩（うんち）</th>
-    <td class="naiy"><script language="JavaScript">
+    <th class="nai">今日は休日です。</th>
+    <td class="nai"><script language="JavaScript">
  
     today = new Date();
     h = today.getHours();
 
     if((h >= 0) && (h < 24))
+        document.write("今日は休日です。");
+    else
+        document.write("今日は休日です。");
+    </script>
+
+    <td>
+  </tr>
+
+  <tr>
+    <th class="nai">💩（うんち）</th>
+    <td class="nai"><script language="JavaScript">
+ 
+    today = new Date();
+    h = today.getHours();
+
+    if((h >= 17) && (h < 24))
         document.write("--");
     else
         document.write("--");
@@ -130,10 +123,10 @@
     <th class="nai">異常</th>
     <td class="nai">--</td>
   </tr>
-
     </table>
+
   </div>
-	
+  
 </div>
 
 <div class="container">
@@ -172,6 +165,7 @@ else {
 // ]]></script>
 
 </div>
+
 <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
@@ -181,10 +175,10 @@ else {
   <p class="example1">ver1.1.2を公開しました 2/18 【変更点 : 日付の表示】</p>
   <p class="example1">ver1.1.5を公開しました 2/19 【変更点 : ページデザイン】</p>
   <p class="example1">ver1.1.6を公開しました 2/20 【変更点 : 新機能を追加、表の文字を縮小】</p>
+  <p class="example1"> おくすり枠を作成しました。 これは期間中だけなのでverアップはされません。 2/22</p>
   <p class="example1">ver1.1.8を公開しました 2/25 【変更点 : うんち枠の追加】</p>
   <p class="example1">ver2.0.1を公開しました。 3/4 【変更点 : デザインのアップデート】</p>
   <p class="example1">ver2.0.6を公開しました。 4/12 【変更点 : 一部表記の変更】</p>
-  
 </div>
 
 </body>
